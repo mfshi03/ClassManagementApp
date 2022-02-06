@@ -1,13 +1,11 @@
 <li class="restaurant-item">
     <article>
       <h2><%= restaurant.name %></h2>
-      <div class="restaurant-meta">
-        <p><%= restaurant.cuisine %></p>
-        <p><%= restaurant.address %></p>
-      </div>
       <p><%= restaurant.description %></p>
       <div class="restaurant-actions">
-        <a href="/restaurants/<%= restaurant.id%>">View Restaurant</a>
+        <div class="container">
+        <a href="/restaurants/<%= restaurant.id%>">View</a>
+        </div>
       </div>
     </article>
   </li>

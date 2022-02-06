@@ -8,18 +8,17 @@
     <%- include('includes/header') %>
     <%- include('includes/side-drawer') %>
     <main>
-      <h1>Recommended restaurants</h1>
+      <h1>Classroom</h1>
       <% if(numberOfRestaurants === 0) {%>
       <p>
-        Unfortunately, we have no restaurant yet - maybe start recommending
-        some?
+        Unfortunately, no students have posted. Maybe check again later.
       </p>
       <% } else {%>
-      <p>Find your next favorite restaurants with help of our other users!</p>
-      <p>We found <%= numberOfRestaurants %> restaurants</p>
-      <form action ="/restaurants" method ="GET">
-        <input type ="hidden" value = "<%= nextOrder %>" name ="order">
-        <button class ="btn">Change order</button>
+      <p>Interact with your class</p>
+      <p>See what your classmates have to say</p>
+      <form action ="/recommend" method ="GET">
+      <!--- <input type ="hidden" value = "<%= nextOrder %>" name ="order">--->
+        <button class ="btn">Post something to the class</button>
       </form>
       <ul id="restaurants-list">
         <% for ( const restaurant of restaurants) { %>

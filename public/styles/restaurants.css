@@ -9,24 +9,27 @@ main {
 }
 
 .restaurant-item {
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 4px;
+  margin: 2rem 0;
+  width: 80px;
+  height: 20px;
+  padding: 8rem;
+  border-radius: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  background-color: rgb(250, 233, 194);
-  color: rgb(110, 78, 7);
-  text-align: left;
+  background-color: rgb(235, 230, 220);
+  color: rgb(22, 21, 18);
+  text-align: center;
+  align-items: center;
 }
 
 .restaurant-item h2 {
-  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+  font-family: sans-serif;
   font-size: 1.25rem;
-  margin: 0.25rem 0;
+  margin: 0rem 0;
 }
 
 .restaurant-item p {
-  margin: 0.2rem 0;
-  color: rgb(110, 78, 7);
+  margin: 0rem 0;
+  color: rgb(26, 25, 24);
 }
 
 .restaurant-meta {
@@ -34,26 +37,37 @@ main {
 }
 
 .restaurant-meta p {
-  color: rgb(170, 148, 95);
+  color: rgb(140, 95, 170);
 }
 
 .restaurant-actions {
   margin-top: 1rem;
-  text-align: right;
+  text-align: left;
+  align-items: center;
 }
 
-.restaurant-actions a, .btn {
-  padding: 0.5rem 1.5rem;
-  background-color: rgb(202, 158, 62);
-  border-radius: 4px;
+.restaurant-actions a,
+.btn {
+  padding: 0.5rem 4rem;
+  background-color: rgb(61, 7, 207);
+  border-radius: 5px;
   color: white;
   text-decoration: none;
   cursor: pointer;
   border: none;
 }
 
+.restaurant-actions a {
+  height: 20px;
+  width: 20px;
+}
+
+.container {
+  align-content: center;
+  width: 100%;
+}
+
 .restaurant-actions a:hover,
-.restaurant-actions a:active
-.btn:hover {
-  background-color: rgb(202, 141, 62);
+.restaurant-actions a:active .btn:hover {
+  background-color: rgb(99, 84, 235);
 }
