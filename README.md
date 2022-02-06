@@ -1,2 +1,2 @@
 # ClassManagementApp
-An app to help teachers manage students virtually.
+<strong> An app to help teachers manage students virtually. </strong>
