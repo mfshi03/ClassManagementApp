@@ -12,6 +12,14 @@
       <p>
         See all your classmates!
       </p>
+      
+      <ul id="restaurants-list">
+        <% for ( const restaurant of restaurants) { %>
+          <%- include('includes/restaurants/restaurant-items', {restaurant: restaurant}) %>
+          <!-- I named the key that is restaurant to deliver data into it  -->
+         <% } %>
+        
+      </ul>
     </main>
     
   </body>
