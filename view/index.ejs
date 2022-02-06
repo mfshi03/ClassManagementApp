@@ -5,7 +5,18 @@
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <%- include('includes/header') %>
+    <header id="main-header">
+      <link rel="stylesheet" href="styles/styles.css" />
+      <!---<div id="logo"><a href="/">Classroom</a></div>--->
+      <nav class="menu">
+        <ul class="menu__list" >
+          <li class = "menu__group"><a href = "/restaurants" class ="menu__link" >Stream</a></li>
+          <li class = "menu__group"><a href = "/recommend"class ="menu__link" >Post</a></li>
+          <li class = "menu__group"><a href = "/about" class ="menu__link" >People</a></li>
+          <li class = "menu__group"><a href = "/about" class ="menu__link" >Meeting</a></li>
+        </ul>
+        </nav>
+      </header>
     <%- include('includes/side-drawer') %>
     <main>
       <h1>Communicate with your teachers and classmates!</h1>

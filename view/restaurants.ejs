@@ -5,7 +5,18 @@
     <link rel="stylesheet" href="styles/restaurants.css" />
   </head>
   <body>
-    <%- include('includes/header') %>
+    <header id="main-header">
+      <link rel="stylesheet" href="styles/styles.css" />
+      <!---<div id="logo"><a href="/">Classroom</a></div>--->
+      <nav class="menu">
+        <ul class="menu__list" >
+          <li class = "menu__group"><a href = "/restaurants" class ="menu__link select__link" >Stream</a></li>
+          <li class = "menu__group"><a href = "/recommend"class ="menu__link" >Post</a></li>
+          <li class = "menu__group"><a href = "/about" class ="menu__link" >People</a></li>
+          <li class = "menu__group"><a href = "/about" class ="menu__link" >Meeting</a></li>
+        </ul>
+        </nav>
+      </header>
     <%- include('includes/side-drawer') %>
     <main>
       <h1>Classroom</h1>
@@ -21,9 +32,8 @@
         <button class ="btn">Post something to the class</button>
       </form>
       <ul id="restaurants-list">
-        <% for ( const restaurant of restaurants) { %>
+        <% for(const restaurant of restaurants) { %>
           <%- include('includes/restaurants/restaurant-items', {restaurant: restaurant}) %>
-          <!-- I named the key that is restaurant to deliver data into it  -->
          <% } %>
       </ul>
       <% } %>
